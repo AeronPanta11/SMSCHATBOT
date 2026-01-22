@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
-import "../css/smschatbot.css"; // Make sure this path is correct
-
+import "../css/smschatbot.css";
 const PHISHING_WORDS = [
   "urgent",
   "urgently",
   "verify",
-  
+
   "login",
   "account",
   "bank",

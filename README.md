@@ -1,16 +1,47 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About Sms Guardian
 
-Currently, two official plugins are available:
+SMS Guardian
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SMS Guardian is a React-based mobile-style SMS chatbot that analyzes messages for potential phishing or risky content. Built with Vite, React, and TailwindCSS, it provides a real-time, interactive chat experience with automatic highlighting of suspicious words.
 
-## React Compiler
+### What SMS Guardian does
+It highlights suspicious keywords like "urgent", "bank", "account", "login", and "password" to warn the user that a link or message may be unsafe.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### How it works
 
-## Expanding the ESLint configuration
+    User types a message.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    The bot scans for suspicious keywords.
+
+    If risky words are detected:
+
+    Keywords are highlighted in red.
+
+    A bot message warns: “This message looks suspicious!! Please be cautious and avoid clicking any links or providing personal information.”
+
+    If no risky words are found:
+
+    Message is treated as safe with green border.
+
+    Bot confirms: “This message seems safe.”
+
+    This helps guide users to identify potentially malicious messages quickly and safely.
+    
+### Tech Stack
+
+Frontend: React 18 + JSX
+
+Styling: TailwindCSS 4.x
+
+PostCSS: @tailwindcss/postcss + autoprefixer
+
+Deployment :vercel
+
+Icons: Lucide React
+
+
+
+
+
+### Project link: https://smschatbot-bok9.vercel.app/

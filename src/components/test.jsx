@@ -6,6 +6,7 @@ const PHISHING_WORDS = [
   "urgent",
   "urgently",
   "verify",
+  
   "login",
   "account",
   "bank",

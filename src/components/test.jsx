@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
+import "../css/smschatbot.css";
+
 
 const PHISHING_WORDS = [
   "urgent",
@@ -200,17 +202,7 @@ export default function SmsChatbot() {
       </div>
     </div>
 
-    {/* border animation styles */}
-    <style>{`
-      @keyframes borderSpin {
-        0% { background-position: 0% 50%; }
-        100% { background-position: 200% 50%; }
-      }
-      .animate-borderSpin {
-        background-size: 200% 200%;
-        animation: borderSpin 2s linear infinite;
-      }
-    `}</style>
+    
   </div>
 );
 
